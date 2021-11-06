@@ -1,0 +1,34 @@
+---
+title: "Plotly"
+output: html_document
+---
+
+```{r, loading_packages}
+
+library(tidyverse)
+library(p8105.datasets)
+
+library(plotly)
+```
+
+```{r, data}
+
+data("rest_inspec")
+
+rest_df =
+  rest_inspec %>%
+  janitor::clean_names()
+
+
+```
+
+
+# Using Plotly
+
+## Scatterplot
+
+## Bar plot
+
+## Box plot
+
+

@@ -10,23 +10,82 @@ output:
 
 **Columbia University**, Mailman School of Public Health
 Biostatistics, MPH |Certificate in Advanced Epidemiology | Expected 2022  
+  
+  
 **University of California Irvine**, School of Biological Sciences
 Bachelor of Science, Biological Sciences, June 2018  
 
 
 ## Professional Experiences
 
-Graduate Teaching Assistant 
-*(August 2021 - present)*
+**Graduate Teaching Assistant** | New York, NY  
+*(August 2021 - present)*  
+
 * Quantitative Foundations in research methods
 
-Abbvie Summer Experiential Intern 
-*(June 2021 - August 2021)*
-*Oncology Statistics Department*  
-* Worked on an independent project analyzing Phase III clinical trial data for breast cancer.  
-* Utilized R to employ a methodology that ameliorated bias in the assessment of duration of response.  
+**Statistical Intern** | Sunnyvale, CA  
+*AbbVie, Statistical Oncology*   
+*(June 2021 - August 2021)*  
 
-  
+* Worked on an independent project analyzing Phase III clinical trial data for breast cancer.    
+* Utilized R to employ a methodology that ameliorated bias in the assessment of duration of response.
+
+**Teacher** | La Cañada Flintridge, CA & La Crescenta, CA  
+*Education, C2 Education*   
+*November 2018 – January 2020*  
+
+* Created trusting rapport with students and families. Specialized in tailoring and troubleshooting learning curriculum for neurodivergent students.  
+* Developed a digital tracking system for acdemic performance
+
+**Medical Assistant** | Arcadia, CA  
+*Huntington Health Physicians,Pediatrics*   
+*December 2018 - June 2019*  
+
+* Provided detailed and empathetic clinical care for toddlers, newborns, and young children. Handled difficult conversations around vaccine hesitancy professionally and excelled in communication. Responsible for all Mandarin translation in the office. 
+
+
+## Research Experiences
+
+**Neonatal Intensive Care Unit** | New York, NY
+*Morgan Stanley Children's Hospital*   
+*(February 2021 - present)*   
+
+* Running quality improvement statistics   
+* Maternal health & community outreach
+
+**Hickok Lab** | Irvine, CA  
+*Undergraduate Research Assistant*  
+*January 2018 – September 2018 *   
+
+* Conducted control studies for aphasia AI facial movement mapping. Data was collected and analyzed with regression to determine thresholds and predicted values for reaction time, semantic responses, and phonetic errors of standardized picture naming. Project overseen by Dr. Gregory Hickok and Dr. Grant Walker.
+
+**Plikus Lab** | Irvine, CA  
+*Undergraduate Assistant*   
+*November 2016 – November 2017*  
+
+* Investigated delayed hair growth patterns in diabetic and obese murine models. Using genetic rescue, was able to study collective behavior of stem cells associated with hair regeneration. Project overseen by Dr. Maksim Plikus, Dr. Ran Zhao, and Dr. Yingzi Liu.
+
+**Vidalakis Lab** | Riverside, CA  
+*Undergraduate Research Assistant*  
+*November 2015 – September 2016*  
+
+* Responsible for statistical analysis of large data collected from citrus diagnostic samples from all California citrus nurseries as a part of the Citrus Clonal Protection Program. Project directed by Dr. Georgios Vidalakis. 
+
+
+## Volunteer Experience 
+**NICU Navigators—COVID-19 Student Service Corps** | New York, NY   
+*NICU Liaison (August 2020 – March 2021)*  
+*Project Co-Lead (March 2021 – Present)*  
+
+* Virtually connecting over 80 families with their babies in the NICU during the pandemic
+* Leading and organizing a team of Columbia University-affiliated students, while working with NICU hospital staff to coordinate the best care for families who have babies in the NICU
+* Collecting data and using SAS to analyze success of the project’s parent outreach services
+
+## Skills and Certifications
+
+* Software: R (Fall 2021), SAS, MS Office, 
+* Languages: Mandarin (Fluent)
+* Certifications: CITI Human Subjects Protection and HIPAA Patient Privacy
 
 
 
