@@ -13,4 +13,4 @@ navbar:
       href: http://github.com/jocelyynsun/
 output:
   html_document
-theme: superhero
+theme: lumen

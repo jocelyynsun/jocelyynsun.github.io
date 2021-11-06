@@ -1,7 +1,6 @@
 ---
-title: ""
+title: "Resume"
 output: html_document
 ---
 
-### Resume
 
