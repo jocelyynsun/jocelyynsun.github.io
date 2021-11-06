@@ -3,4 +3,17 @@ title: "Resume"
 output: html_document
 ---
 
+## Graduate Teaching Assistant 
+*(August 2021 - present)*
+* Quantitative Foundations in research methods
+
+## Abbvie Summer Experiential Intern *(2021)*
+*Oncology Statistics Department*  
+
+* Worked on an independent project analyzing Phase III clinical trial data for breast cancer.  
+* Utilized R to employ a methodology that ameliorated bias for the assessment of duration of response.  
+* Project was presented to the statistics department.   
+
+
+
 

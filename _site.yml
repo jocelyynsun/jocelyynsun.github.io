@@ -1,5 +1,7 @@
 name: "Yay internet!"
 output_dir: "."
+toc: TRUE
+toc_float: TRUE
 navbar:
   title: "Home"
   right:
