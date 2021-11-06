@@ -4,9 +4,10 @@ toc: TRUE
 toc_float: TRUE
 navbar:
   title: "Home"
-  right:
+  left:
     - text: "Resume"
       href: about.html
+  right:
     - icon: fa-envelope fa-lg
       href: mailto:<jocelyn.sun@columbia.edu>
     - icon: fab fa-linkedin
