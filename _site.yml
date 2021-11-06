@@ -12,5 +12,5 @@ navbar:
     - icon: fa-github fa-lg
       href: http://github.com/jocelyynsun/
 output:
-  html_document
-theme: lumen
+  html_document:
+    theme: simplex

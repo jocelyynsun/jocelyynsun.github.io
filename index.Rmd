@@ -3,7 +3,7 @@ title: "Hello!"
 output: html_document
 ---
 
-My name is Jocelyn and I am a 2nd year MPH student in the Biostatistics department at Columbia University Mailman School of Public Health. My certificate is in Advanced Epidemiology. I am also a TA for a Quantitative Foundations class for the first year MPH research methods course. In other words, my day to day usually looks something like this:
+My name is Jocelyn and I am a 2nd year MPH student in the [Biostatistics department](http://www.publichealth.columbia.edu/become-student/departments/biostatistics) at Columbia University Mailman School of Public Health. My certificate is in Advanced Epidemiology. I am also a TA for a Quantitative Foundations class for the first year MPH research methods course. In other words, my day to day usually looks something like this:
 
 ![](https://media.giphy.com/media/q6RoNkLlFNjaw/giphy.gif)
 
