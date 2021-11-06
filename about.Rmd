@@ -6,16 +6,27 @@ output:
     toc_float: true
 ---
 
-## Graduate Teaching Assistant 
+## Education
+
+**Columbia University**, Mailman School of Public Health
+Biostatistics, MPH |Certificate in Advanced Epidemiology | Expected 2022  
+**University of California Irvine**, School of Biological Sciences
+Bachelor of Science, Biological Sciences, June 2018  
+
+
+## Professional Experiences
+
+Graduate Teaching Assistant 
 *(August 2021 - present)*
 * Quantitative Foundations in research methods
 
-## Abbvie Summer Experiential Intern *(2021)*
+Abbvie Summer Experiential Intern 
+*(June 2021 - August 2021)*
 *Oncology Statistics Department*  
-
 * Worked on an independent project analyzing Phase III clinical trial data for breast cancer.  
-* Utilized R to employ a methodology that ameliorated bias for the assessment of duration of response.  
-* Project was presented to the statistics department.   
+* Utilized R to employ a methodology that ameliorated bias in the assessment of duration of response.  
+
+  
 
 
 
