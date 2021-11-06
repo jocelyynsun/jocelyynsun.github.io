@@ -8,9 +8,9 @@ output:
 
 ### Meet Jocelyn
 
-<img src="images/photo.jpg">
+<img src="images/photo2.jpg" style="width:46%; padding-left: 12px" align ="right">
 
-Hello! My name is Jocelyn and I am an LA native. I currently attend Columbia University Mailman School of Public Health where I study biostatistics and epidemiology.    
+Hello! My name is Jocelyn and I am an LA native. I currently attend [Columbia University Mailman School of Public Health](http://www.publichealth.columbia.edu/) where I study biostatistics and epidemiology. My interests include maternal and child health outcomes, oncology, and climate change.    
 
 If you would like to learn more about my professional background, please see my [resume](about.html).
 
@@ -26,5 +26,5 @@ I also enjoy having an active lifestyle and have found a love for hiking in the 
   
 I'm fairly obsessed with my sister's dog, Diamond. She's an 11-year-old lab/pitty rescue, with the sweetest soul! This is my favorite picture of her:
 
-<img src="images/diamond.jpg" style="width:75%">
+<img src="images/diamond.jpg" style="width:75%; padding-left: 100px">
 
