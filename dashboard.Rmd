@@ -51,7 +51,7 @@ instacart %>%
 
 ```
 
-Column {data-width=650}
+Column {data-width=400}
 -----------------------------------------------------------------------
 
 # Graph 2
@@ -68,8 +68,9 @@ instacart %>%
 
 ```
 
-Column {data-width=350}
------------------------------------------------------------------------
+Column {data-width=600}
+-------------------------------------
+
 # Graph 3
 
 ```{r, bar_plot, echo = FALSE, message = FALSE}
