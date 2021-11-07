@@ -3,7 +3,7 @@ title: "Plotly"
 output: html_document
 ---
 
-```{r, loading_packages}
+```{r, loading_packages, message = FALSE}
 
 library(tidyverse)
 library(p8105.datasets)
@@ -11,24 +11,77 @@ library(p8105.datasets)
 library(plotly)
 ```
 
-```{r, data}
+```{r, data, results = 'hide', message = FALSE}
 
-data("rest_inspec")
+data("instacart")
 
-rest_df =
-  rest_inspec %>%
+instacart %>%
   janitor::clean_names()
-
 
 ```
 
 
 # Using Plotly
 
-## Scatterplot
+### Boxplot
+Looking at the distribution of the order hour of the day within the snack department.
 
-## Bar plot
+```{r, plotly_boxplot, message = FALSE}
 
-## Box plot
+instacart %>% 
+  filter(department == "snacks") %>% 
+  plot_ly(type = "box",
+          y = ~order_hour_of_day, color = ~aisle,
+          colors = "viridis") %>%
+  layout(xaxis = list(title = "Snack type"),
+         yaxis = list(title = "Order hour of the day"))
+
+```
+
+### Bar plot
+Looking at the types of snacks ordered and the order frequency.
+
+```{r, bar_plot, message = FALSE}
+
+instacart %>%
+  filter(department == "snacks") %>%
+  count(aisle) %>%
+  arrange(desc(n)) %>%
+  mutate(
+    aisle = factor(aisle),
+    aisle = fct_reorder(aisle,n)) %>%
+  plot_ly(type = "bar",
+          x = ~aisle, y = ~n, 
+          color = ~aisle, colors = "viridis") %>%
+  layout(xaxis = list(title = "Snack type"),
+         yaxis = list(title = "Order Frequency (n)"))
+
+```
 
 
+### Line Graph
+Looking at the order frequency of snack types over one week.
+
+```{r, line_plot, message = FALSE, warning = FALSE}
+
+instacart %>%
+  sample_n(5000) %>%
+  filter(department == "snacks") %>%
+  group_by(order_dow) %>%
+  count(aisle) %>%
+  mutate(order_dow = factor(order_dow),
+         order_dow = recode(order_dow,
+                            "0" = "Sunday",
+                            "1" = "Monday",
+                            "2" = "Tuesday",
+                            "3" = "Wednesday",
+                            "4" = "Thursday",
+                            "5" = "Friday",
+                            "6" = "Saturday")) %>%
+  ungroup() %>%
+  plot_ly(type = 'scatter', mode = 'lines+markers') %>% 
+  add_trace(x = ~order_dow, y = ~n, color = ~aisle) %>%
+  layout(xaxis = list(title = "Day of the Week"),
+         yaxis = list(title = "Order Frequency (n)"))
+
+```
