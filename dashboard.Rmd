@@ -8,12 +8,20 @@ output:
       - { title: "Home", href: index.html}
 ---
 
-```{r, message = FALSE, echo = FALSE}
+```{r, include = FALSE}
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 library(flexdashboard)
 ```
+
+```{r}
+data("instacart")
+
+instacart %>%
+  janitor::clean_names()
+```
+
 
 Column {data-width=650}
 -----------------------------------------------------------------------
@@ -21,8 +29,6 @@ Column {data-width=650}
 # Graph 1
 
 ```{r}
-data("instacart")
-
 instacart %>%
   sample_n(5000) %>%
   filter(department == "snacks") %>%
