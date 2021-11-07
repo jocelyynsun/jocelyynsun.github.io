@@ -16,8 +16,7 @@ library(flexdashboard)
 ```
 
 
-Column {data-width=650}
------------------------------------------------------------------------
+## Column 1 {data-width=650}
 
 ### Graph 1
 
@@ -48,8 +47,7 @@ instacart %>%
          yaxis = list(title = "Order Frequency (n)"))
 ```
 
-Column {data-width=350}
--------------------------------------
+## Column 2 {data-width=350}
 
 ### Graph 2
 
