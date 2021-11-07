@@ -1,17 +1,23 @@
 ---
-title: "Plotly"
-output: html_document
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
 ---
 
-```{r, loading_packages, message = FALSE}
+```{r, setup, echo = FALSE, message = FALSE}
 
 library(tidyverse)
 library(p8105.datasets)
-
 library(plotly)
+library(flexdashboard)
+
 ```
 
-```{r, data, results = 'hide', message = FALSE}
+
+```{r, data, include = FALSE}
 
 data("instacart")
 
@@ -20,10 +26,8 @@ instacart %>%
 
 ```
 
-### Line Graph
-Looking at the order frequency of snack types over one week.
 
-```{r, line_plot, message = FALSE, warning = FALSE}
+```{r, line_plot, echo = FALSE, message = FALSE, warning = FALSE}
 
 instacart %>%
   sample_n(5000) %>%
@@ -47,11 +51,10 @@ instacart %>%
 
 ```
 
+Column {data-width=650}
+-----------------------------------------------------------------------
 
-### Boxplot
-Looking at the distribution of the order hour of the day within the snack department.
-
-```{r, plotly_boxplot, message = FALSE}
+```{r, plotly_boxplot, echo = FALSE, message = FALSE}
 
 instacart %>% 
   filter(department == "snacks") %>% 
@@ -63,10 +66,10 @@ instacart %>%
 
 ```
 
-### Bar plot
-Looking at the types of snacks ordered and the order frequency.
+Column {data-width=350}
+-----------------------------------------------------------------------
 
-```{r, bar_plot, message = FALSE}
+```{r, bar_plot, echo = FALSE, message = FALSE}
 
 instacart %>%
   filter(department == "snacks") %>%
@@ -82,5 +85,4 @@ instacart %>%
          yaxis = list(title = "Order Frequency (n)"))
 
 ```
-
 
