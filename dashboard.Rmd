@@ -19,7 +19,7 @@ library(flexdashboard)
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-## Graph 1
+### Graph 1
 
 ```{r}
 data("instacart")
@@ -51,7 +51,7 @@ instacart %>%
 Column {data-width=350}
 -------------------------------------
 
-## Graph 2
+### Graph 2
 
 ```{r}
 instacart %>% 
@@ -65,7 +65,7 @@ instacart %>%
 
 
 
-## Graph 3
+### Graph 3
 
 ```{r}
 instacart %>%
