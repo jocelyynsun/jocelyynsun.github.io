@@ -4,22 +4,22 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+    source: embed
+    navbar:
+      - { title: "Home", href: index.html}
 ---
 
 ```{r, include = FALSE}
-
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 library(flexdashboard)
-
 ```
 
 
 # Graph 1
 
 ```{r}
-
 data("instacart")
 
 instacart %>%
@@ -41,7 +41,6 @@ instacart %>%
   add_trace(x = ~order_dow, y = ~n, color = ~aisle) %>%
   layout(xaxis = list(title = "Day of the Week"),
          yaxis = list(title = "Order Frequency (n)"))
-
 ```
 
 Column {data-width=650}
@@ -50,7 +49,6 @@ Column {data-width=650}
 # Graph 2
 
 ```{r}
-
 instacart %>% 
   filter(department == "snacks") %>% 
   plot_ly(type = "box",
@@ -58,7 +56,6 @@ instacart %>%
           colors = "viridis") %>%
   layout(xaxis = list(title = "Snack type"),
          yaxis = list(title = "Order hour of the day"))
-
 ```
 
 Column {data-width=350}
@@ -67,7 +64,6 @@ Column {data-width=350}
 # Graph 3
 
 ```{r}
-
 instacart %>%
   filter(department == "snacks") %>%
   count(aisle) %>%
@@ -80,6 +76,5 @@ instacart %>%
           color = ~aisle, colors = "viridis") %>%
   layout(xaxis = list(title = "Snack type"),
          yaxis = list(title = "Order Frequency (n)"))
-
 ```
 
