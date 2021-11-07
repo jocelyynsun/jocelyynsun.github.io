@@ -23,6 +23,34 @@ instacart %>%
 
 # Using Plotly
 
+### Line Graph
+Looking at the order frequency of snack types over one week.
+
+```{r, line_plot, message = FALSE, warning = FALSE}
+
+instacart %>%
+  sample_n(5000) %>%
+  filter(department == "snacks") %>%
+  group_by(order_dow) %>%
+  count(aisle) %>%
+  mutate(order_dow = factor(order_dow),
+         order_dow = recode(order_dow,
+                            "0" = "Sunday",
+                            "1" = "Monday",
+                            "2" = "Tuesday",
+                            "3" = "Wednesday",
+                            "4" = "Thursday",
+                            "5" = "Friday",
+                            "6" = "Saturday")) %>%
+  ungroup() %>%
+  plot_ly(type = 'scatter', mode = 'lines+markers') %>% 
+  add_trace(x = ~order_dow, y = ~n, color = ~aisle) %>%
+  layout(xaxis = list(title = "Day of the Week"),
+         yaxis = list(title = "Order Frequency (n)"))
+
+```
+
+
 ### Boxplot
 Looking at the distribution of the order hour of the day within the snack department.
 
@@ -59,29 +87,3 @@ instacart %>%
 ```
 
 
-### Line Graph
-Looking at the order frequency of snack types over one week.
-
-```{r, line_plot, message = FALSE, warning = FALSE}
-
-instacart %>%
-  sample_n(5000) %>%
-  filter(department == "snacks") %>%
-  group_by(order_dow) %>%
-  count(aisle) %>%
-  mutate(order_dow = factor(order_dow),
-         order_dow = recode(order_dow,
-                            "0" = "Sunday",
-                            "1" = "Monday",
-                            "2" = "Tuesday",
-                            "3" = "Wednesday",
-                            "4" = "Thursday",
-                            "5" = "Friday",
-                            "6" = "Saturday")) %>%
-  ungroup() %>%
-  plot_ly(type = 'scatter', mode = 'lines+markers') %>% 
-  add_trace(x = ~order_dow, y = ~n, color = ~aisle) %>%
-  layout(xaxis = list(title = "Day of the Week"),
-         yaxis = list(title = "Order Frequency (n)"))
-
-```
