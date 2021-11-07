@@ -4,10 +4,9 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
-    source: embed
 ---
 
-```{r, setup, echo = FALSE, message = FALSE}
+```{r, include = FALSE}
 
 library(tidyverse)
 library(p8105.datasets)
@@ -28,7 +27,7 @@ instacart %>%
 
 # Graph 1
 
-```{r, line_plot, echo = FALSE, message = FALSE, warning = FALSE}
+```{r}
 
 instacart %>%
   sample_n(5000) %>%
@@ -57,7 +56,7 @@ Column {data-width=400}
 
 # Graph 2
 
-```{r, plotly_boxplot, echo = FALSE, message = FALSE}
+```{r}
 
 instacart %>% 
   filter(department == "snacks") %>% 
@@ -74,7 +73,7 @@ Column {data-width=600}
 
 # Graph 3
 
-```{r, bar_plot, echo = FALSE, message = FALSE}
+```{r}
 
 instacart %>%
   filter(department == "snacks") %>%
