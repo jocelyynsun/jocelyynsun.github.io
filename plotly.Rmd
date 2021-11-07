@@ -7,8 +7,8 @@ output: html_document
 
 library(tidyverse)
 library(p8105.datasets)
-
 library(plotly)
+
 ```
 
 ```{r, data, results = 'hide', message = FALSE}
