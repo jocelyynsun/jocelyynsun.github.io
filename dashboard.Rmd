@@ -9,13 +9,15 @@ output:
       - { title: "Home", href: index.html}
 ---
 
-```{r, include = FALSE}
+```{r, message = FALSE, echo = FALSE}
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 library(flexdashboard)
 ```
 
+Column {data-width=650}
+-----------------------------------------------------------------------
 
 # Graph 1
 
@@ -43,8 +45,8 @@ instacart %>%
          yaxis = list(title = "Order Frequency (n)"))
 ```
 
-Column {data-width=650}
------------------------------------------------------------------------
+Column {data-width=350}
+-------------------------------------
 
 # Graph 2
 
@@ -58,8 +60,7 @@ instacart %>%
          yaxis = list(title = "Order hour of the day"))
 ```
 
-Column {data-width=350}
--------------------------------------
+
 
 # Graph 3
 
